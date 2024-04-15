@@ -1,0 +1,88 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+}
+form {
+  display: grid;
+  gap: 10px;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: #4e75ff;
+  cursor: pointer;
+}
+
+label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 10px;
+  width: 360px;
+  height: 40px;
+  order: 1;
+  border-radius: 4px;
+  border-width: 1px;
+  border: #808080 2px solid;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+textarea {
+  margin-top: 10px;
+  width: 360px;
+  height: 80px;
+  order: 2;
+  border-radius: 4px;
+  border-width: 1px;
+  border: #808080 2px solid;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+button:hover {
+  background: #6c8cff;
+  cursor: pointer;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #000000;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: transparent;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: #aaa;
+}
